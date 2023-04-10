@@ -1,0 +1,58 @@
+@media (min-height:600px){
+    .restart_button{
+        width:5.5rem;
+        height:5.5rem;
+        bottom: 20vh;
+    }
+}
+@media (max-width:667px ) {
+    .error_warn{
+        font-size: 5.8vw;
+    }
+}
+
+@media (min-width:812px ) {
+    /* 兼容ipad */
+    .program_runbtn {
+        right: 10vw!important;
+    }
+}
+@media (min-width:1024px ) {
+    /* 兼容ipad */
+    .program_runbtn {
+        right: 13.6vw!important;
+        bottom: 16vh!important;
+    }
+    .title_tts{
+        width: 6vw;
+        height: 8vh;
+        top: 2vh;
+    }
+    .switchModel{
+        top: 2.8vh!important;
+    }
+    .horn {
+        left: 22vw!important;
+    }
+    .help {
+        left: 72vw!important;
+    }
+    .course_error_block{
+        margin-left: 10vw;
+        margin-top: 6vh;
+    }
+    .runbutton{
+        width: 3.8vh;
+        height: 3.8vh;
+    }
+}
+
+@media (min-width:1366px ){
+    .course_error_block {
+        margin-left: 12vw;
+        margin-top: 6.8vh;
+    }
+    .error_warn{
+        font-size: 5vw;
+    }
+}

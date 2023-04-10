@@ -1,0 +1,425 @@
+.blocklyZoom {
+    display: none;
+}
+
+.input-modal-body {
+    display: table-row;
+    height: 100%;
+}
+
+.input-modal-body .center-align {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.input-modal {
+    display: table;
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.input-modal::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    z-index: -10;
+}
+
+.input-modal.purple .input-modal-title h3 {
+    background-color: #922CCE !important;
+}
+
+.input-modal.purple::before {
+    background-color: #5838AF;
+}
+
+.input-modal.green .input-modal-title h3 {
+    background-color: #35bc74 !important;
+}
+
+.input-modal.green::before {
+    background-color: #58d08a;
+}
+
+.input-modal.light-green .input-modal-title h3 {
+    background-color: #35bc74 !important;
+}
+
+.input-modal.light-green::before {
+    background-color: #58d08a
+}
+
+.input-modal.yellow .input-modal-title h3 {
+    background-color: #edc745 !important;
+}
+
+.input-modal.yellow::before {
+    background-color: #fdc05d;
+}
+
+.input-modal.blue .input-modal-title h3 {
+    background-color: #58c2ee !important;
+}
+
+.input-modal.blue::before {
+    background-color: #b8dfea;
+}
+
+.input-modal.orange .input-modal-title h3 {
+    background-color: #ff5d28 !important;
+}
+
+.input-modal.orange::before {
+    background-color: #fd904e;
+}
+
+.input-modal.gray .input-modal-title h3 {
+    background-color: #BCBAC5 !important;
+}
+
+.input-modal.gray::before {
+    background-color: #393939;
+}
+
+.input-modal.pink .input-modal-title h3 {
+    background-color: #F66E7A !important;
+}
+
+.input-modal.pink::before {
+    background-color: #FF96A9;
+}
+
+.input-modal.purple .input-modal-title h3 {
+    background-color: #6413A2 !important;
+}
+
+.input-modal.purple::before {
+    background-color: #902bdd;
+}
+
+.outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.color-picker-item-wrapper {
+    width: 480px;
+    margin: 25px auto;
+    position: relative;
+    border: 1px solid white;
+}
+
+.color-picker-item {
+    display: inline-block;
+    width: 60px;
+    padding-top: 60px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.color-picker-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+}
+
+.color-picker-item.active::after {
+    top: -15px;
+    bottom: -15px;
+    border: 3px solid white;
+}
+
+.block-input-control-next-button:active {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.input-modal-title .block-input-color {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    padding: 2px 15px;
+    border: 3px solid white;
+    height: 30px;
+    width: 70px;
+    vertical-align: middle;
+}
+
+.input-modal-title .block-input-value {
+    display: inline-block;
+    margin: 0 7px;
+    padding: 2px 12px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.input-modal-title .ribbon-triangle {
+    width: 10px;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.blocklyNumPadButton {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    margin: 4px;
+    border-radius: 4px;
+    background: #547AB2;
+    color: #FFFFFF;
+    outline: none;
+    border: 1px solid #435F91;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Helvetica Neue Helvetica, sans-serif;
+    font-size: 12pt;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.blocklyNumPadButton > img {
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.blocklyNumPadButton:active {
+    background: #435F91;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.blocklyNumPadButton_phone {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    margin: 4px;
+    border-radius: 4px;
+    background: #547AB2;
+    color: #FFFFFF;
+    outline: none;
+    border: 1px solid #435F91;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Helvetica Neue Helvetica, sans-serif;
+    font-size: 12pt;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+.blocklyNumPadButton_phone > img {
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.blocklyNumPadButton_phone:active {
+    background: #435F91;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* 教材 菜单新增  begin*/
+.blocklyTreeRow .blocklyTreeIcon_return {
+    display: inline-block;
+    background:url('../images/toolbar/return.png') no-repeat center/150% 150%;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(1) .blocklyTreeRow .blocklyTreeIcon {
+    background-image: url(../images/toolbar/event/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(1) .blocklyTreeRow .blocklyTreeLabel {
+    color: #EC6087;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(2) .blocklyTreeRow .blocklyTreeIcon {
+    background-image: url(../images/toolbar/motion/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(2) .blocklyTreeRow .blocklyTreeLabel {
+    color: #27A6ED;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(3) .blocklyTreeRow  .blocklyTreeIcon {
+    background-image: url(../images/toolbar/control/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(3) .blocklyTreeRow .blocklyTreeLabel {
+    color: #C570EF;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(4) .blocklyTreeRow .blocklyTreeIcon {
+    background-image: url(../images/toolbar/acousto_optic/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(4) .blocklyTreeRow .blocklyTreeLabel {
+    color: #FFB700;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(5) .blocklyTreeRow  .blocklyTreeIcon {
+    background-image: url(../images/toolbar/sensors/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(5) .blocklyTreeRow .blocklyTreeLabel {
+    color: #FF9749;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(6) .blocklyTreeRow  .blocklyTreeIcon {
+    background-image: url(../images/toolbar/math/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(6) .blocklyTreeRow .blocklyTreeLabel {
+    color: #92A5B2;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(7) .blocklyTreeRow  .blocklyTreeIcon {
+    background-image: url(../images/toolbar/variable/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(7) .blocklyTreeRow .blocklyTreeLabel {
+    color: #1DAFB9;
+}
+
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(8) .blocklyTreeRow  .blocklyTreeIcon {
+    background-image: url(../images/toolbar/function/menu_not_selected.png);
+}
+.blocklyTreeRoot>div:nth-child(2)>div:nth-child(8) .blocklyTreeRow .blocklyTreeLabel {
+    color: #5CD289;
+}
+/* 教材 菜单新增  end*/
+
+.hide {
+    display:none;
+}
+
+.blocklyIconGroup .blocklyIconShape{
+    fill: rgb(255, 0, 0);
+    stroke:rgb(255, 0, 0);
+}
+
+.blocklySameShadow > .blocklyPath {
+    stroke-width: 4px;
+}
+.blocklySelected > .blocklyPath {
+    stroke:#FFEB3D;
+    stroke-width: 4px;
+}
+.blocklyDraggable .blocklyPathOutline {
+    stroke:#FFEB3D;
+    stroke-width: 4px;
+}
+
+.blocklyTrashOuter {
+    position: absolute;
+    z-index: 180;
+}
+
+.blocklySvg {
+    background-color: #2E3B55;
+}
+
+.blocklyText {
+    /* font-family:PingFangSC-Regular, sans-serif; */
+    font-weight: normal;
+}
+
+.blocklyMainBackground {
+    stroke-width: 0;
+}
+
+.workspace {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+.blocklyToolboxDiv {
+    height:100vh !important;
+    text-align:left;
+    overflow:hidden !important;
+    border-right:none !important;
+    background:#2E3B55 !important;
+    box-sizing: border-box;
+}
+
+.blocklyTreeRoot {
+    box-sizing: border-box;
+    border-color:#ddd;
+    border-width:1px 0px 0px 0px;
+    border-style:solid;
+    margin:0;
+    border-top:none;
+    padding:0;
+}
+
+.blocklyTreeRow {
+    border-left-width: 0 !important;
+    margin-bottom: 0;
+    padding-left: .9rem !important;
+    padding-right: .9rem;
+    box-sizing:border-box;
+    height:10.75vh;
+    line-height:10.75vh;
+    position:relative;
+    background:#3E5570;
+    max-width: 20vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.iphoneX .blocklyTreeRow {
+    padding-left: 35px !important;
+    padding-right: 35px;
+}
+
+.blocklyTreeIcon {
+    width: 2rem;
+    height: 2rem;
+    background-size: 100% 100%; 
+}
+.blocklyTreeLabel {
+    padding: 0;
+    padding-left: 0.9rem;
+    font-size: 1.1rem;
+    text-transform:capitalize;
+}
+
+.blocklyTreeSelected {
+    background-color: #3779A3;
+}
+
+.blocklyTreeSelected .blocklyTreeLabel {
+    color: #fff !important;
+}
+
+.blocklyReturn {
+    margin-bottom: 1px;
+    height: 14vh;
+    line-height: 14vh;
+}

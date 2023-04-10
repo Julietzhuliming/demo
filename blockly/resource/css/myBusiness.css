@@ -1,0 +1,665 @@
+/*********我的动作，我的声音  begin**************/
+
+.my_business_container {
+    width: 100%;
+    height: 62%;
+    align-items: flex-start;
+    padding-top: 1.2rem;
+    box-sizing: border-box;
+}
+
+
+.my_business_container .item_out_div_class {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 28rem;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.my_business_container .item_out_div_class ul {
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 4px;
+    overflow: hidden;
+}
+
+.my_business_container .list_item_div.flex {
+    width: 28rem;
+}
+
+.my_business_container .list_item_hide_buttons .left_eidtor_area {
+    opacity: 0;
+}
+.my_business_container .list_item {
+    position: relative;
+    color: #000000;
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    margin-bottom: .6rem;
+    border-radius: .6rem;
+    box-shadow: 0px 0.2rem 0px #cfcfcf;
+    -webkit-box-shadow: 0px 0.2rem 0px #cfcfcf;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+.my_business_container .editable_list_item_normal {
+   overflow: hidden;
+}
+
+.my_business_container .list_item.active {
+    box-shadow: 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+    border: 4px solid #49CBB0;
+    box-sizing: border-box;
+}
+
+/* .my_business_container .left_span, .my_business_container .right_span {
+    position: absolute;
+    top: 26%;
+} */
+
+.my_business_container .left_span {
+    left: 10%;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.my_business_container .list_item_div{
+    height:100%;
+}
+.my_business_container .list_item_div .item_con{
+    position: relative;
+    flex:1;
+    height: 100%;
+}
+
+.my_business_container .list_item_div .item_con>input{    
+    background:#fff;
+    line-height: 40px;
+    width: 100%;
+}
+.my_business_container .list_item_div .left_eidtor_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_business_container .editable_item_normal .left_eidtor_area{
+    margin-right: -31%;
+}
+
+.my_business_container .list_item_div .edit_btn{    
+    width: 4rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: #287EF1 url('../images/index/list_edit.png') no-repeat center;
+    background-size: 50%;
+}
+.my_business_container .list_item_div .delete_btn{    
+    width: 4rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: #E14470 url('../images/index/list_delete.png') no-repeat center;
+    background-size: 50%;
+}
+
+
+/*左滑动删除*/
+.list_item .left_delete_btn {
+    position: absolute;
+    top: 0;
+    right: -81px;
+    background: #A1b3b7;
+    color: #fff;
+    width: 80px;
+    height: 100%;
+    background:#A1b3b7 url('../images/popup/sound/delete@2x.png') no-repeat center/50%;
+}
+
+.business_btns {
+    width: 100%;
+    height: 3rem;
+    background-color: #FFFFFF;
+    color: #304665;
+    border-radius: 2.2rem 2.2rem 0 0;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.business_btns .add_btn_class {
+    position: relative;
+    width: auto;
+}
+
+.business_btns .add_btn_class span {
+    position: absolute;
+    background:url('../images/popup/sound/add@2x.png') no-repeat center/contain;
+    font-size: 2.5rem;
+    height: 3rem;
+    color: #2cc4e9;
+    top: 0rem;
+    left: 0.5rem;
+    width: 3.4rem;
+}
+
+.my_business_container .left_span, .my_business_container .right_span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.my_business_container .left_span {
+    left: 5%;
+}
+
+.my_business_container .slip_left_span {
+    left: 54%;
+}
+
+.my_business_container .right_span {
+    right: 10%;
+}
+
+.my_business_container .editable_item_normal .right_span{
+    right: 35%;
+}
+
+.my_business_container .left_span .sound_time {
+    margin-left:50px;
+}
+
+.background_sound_btn {
+    color: #304665;
+    white-space: nowrap;
+    position: absolute;
+    right: 2rem;
+    z-index: 99999;
+}
+
+.popup_middle_list_items .background_sound_btn {
+    top: 14px;
+}
+
+.background_sound_btn span {
+    vertical-align: middle;
+}
+
+/*********我的动作，我的声音  end**************/
+/*******************创建动作 动作命名  begin************************/
+.my_action {
+    width: 100%;
+    height: 100%;
+}
+.my_action .img_outer{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+}
+.my_action img{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    display:block;
+}
+
+.my_action .my_action {
+    position:relative;
+    height: 100%;
+    text-align: center;
+}
+
+.my_action .action_named {
+    font-size: 1rem;
+}
+
+.my_action .action_named > input {
+    background: none;
+    border: none;
+    border-bottom: 0.1rem solid #464141;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*******************创建动作 动作命名  end************************/
+
+/*******************我的录音  录音-给录音命名  begin************************/
+.sound_record_contain {
+    width: 80%;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    font-family:PingFangSC-Regular, sans-serif;
+    color:#000000;
+}
+
+.sound_record_contain svg {
+    width: 50.4vh;
+    height: 50.4vh;
+}
+.sound_record_contain g > text {
+    text-anchor: middle;
+    font-size: 5rem;
+    font-family: Overpass Mono, monospace;
+    fill: hsl(210, 100%, 75%);
+    opacity: 0;
+    -webkit-animation-name: opac;
+    animation-name: opac;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.sound_record_contain g > text:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sound_record_contain g > text:nth-child(2) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.sound_record_contain g > text:nth-child(3) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes opac {
+    0% {
+        opacity: 0;
+    }
+    7.5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+    7.5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.create_my_action{
+    height: 57vh;
+}
+.super_small_action{
+    height: 33vh;
+    padding-top: 0;
+}
+
+.special .super_small_action{
+    height: 3rem;
+    padding-top: 0.4rem;
+}
+
+.special .blueDis_tips{
+    padding: 5.4rem 1rem 0;
+    color:black;
+}
+
+.change_html_area {
+    position: relative;
+    height: 60%;
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:3vh;
+}
+.change_html_area>img{
+    height: 88%;
+}
+
+.sound_time_class {
+    flex-basis: 100%;
+    position: relative;
+}
+.sound_record_contain .currentValue{
+    position: absolute;
+    font-size: 0.6rem;
+    z-index: 100;
+    /* margin-top: -22px; */
+    right: 0;
+    top: -1.5rem;
+}
+.sound_time_class .min_time {
+    position: absolute;
+    left: 0px;
+}
+
+.sound_time_class .max_time {
+    position: absolute;
+    right: 0px;
+}
+
+/*重写我的录音进度条样式*/
+.sound_time_class input[type=range]::-webkit-slider-runnable-track {
+    height: 17px;
+}
+.sound_time_class input[type=range]{
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+.sound_time_class>input {
+    height: 18px;
+}
+
+.sound_time_class input[type=range]::-webkit-slider-thumb {
+    height:1.4rem;
+    width: 0.3rem;
+    background: none;
+    background: #4cd964;
+}
+.sound_record_contain .progressbar{
+    width:80vh!important;
+    height:1.4rem !important;
+}
+.sound_record_contain .backrange::before{
+    width: 1.0rem !important;
+    border-top-left-radius:1.4rem !important;
+    border-bottom-left-radius:1.4rem !important;
+    height:1.4rem !important;
+}
+
+.sound_record_contain .progress{
+    left: 2.5vh !important;
+    right: 2.5vh !important;
+}
+.sound_record_contain input::-webkit-slider-thumb {
+    height:1.4rem !important;
+    width:0.3rem !important;
+}
+.sound_record_contain .backrange{
+    border-radius:5vh !important;
+    background:#ededed !important;
+    box-shadow:none !important;
+}
+/*阻止IOS默认样式*/
+.sound_record_contain input:disabled{
+    opacity:1!important;
+}
+/*******************我的录音  录音-给录音命名  end************************/
+.gyro_status {
+    position: absolute;
+    top: 0px;
+    right: 22px;
+    width: auto;
+}
+.gyro_status img{
+    max-width:19px;
+    margin-right:5px;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+.gyro .item_list li img {
+    width:10.8vh !important;
+}
+.popup_middle_three_items .gyro .item_list li img {
+    width: 6rem !important;
+}
+
+.popup_bottom_btn{
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+}
+.popup_bottom_btn .bottom_canncel{
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    min-width: 7rem;
+    height: 2.6rem;
+    border-radius: 3rem;
+    background: #287EF1;
+    text-align: center;
+    color: white;
+    line-height: 2.8rem;
+    box-shadow: 0rem 0.35rem 0.2rem #385FA5;
+}
+.popup_bottom_btn .bottom_ok{
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    min-width: 7rem;
+    height: 2.6rem;
+    border-radius: 3rem;
+    background: #287EF1;
+    text-align: center;
+    color: white;
+    line-height: 2.8rem;
+    box-shadow: 0rem 0.35rem 0.2rem #385FA5;
+}
+
+.popup_bottom_btn .bottom_ok:active::after,
+.popup_bottom_btn .bottom_canncel:active::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background: rgba(0, 0, 0, .3);
+}
+/* 项目列表  begin */
+.project_popup_container {
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:100%;
+    z-index:9999;
+}
+
+.project_popup {
+    position:absolute;
+    right:0;
+    background: rgba(29, 44, 66, 0.8);
+    box-shadow:0 0 18px 0 rgba(0, 0, 0, 0.14);
+    width: 40%;
+    height: 100%;
+}
+
+.project_popup_container .item_out_div_class{width:85%;margin:0 auto;}
+.project_popup_container .item_out_div_class ul {
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-top: 1px solid #58708B;
+}
+.project_popup .index_my_business_container_noroot{
+    width: 100%;
+    margin: 0 auto;
+    height: 86vh;
+    align-items: flex-start;
+}
+.index_my_business_container{
+    width: 100%;
+    height: 74vh;
+    align-items: flex-start;
+    overflow-y:  auto;
+  
+}
+
+.index_my_business_container .editable_list_item{
+    overflow: hidden;
+}
+
+.index_my_business_container .li_list_item_div{   
+    position:relative; 
+    width: 100%;
+    border-bottom: 1px solid #58708B;
+    /* margin: 1px auto; */
+    color: #98A5B6;
+    
+}
+
+.index_my_business_container .editable_item{
+   width:150%;
+   -webkit-transition: all 0.2s;
+   transition: all 0.2s;
+}
+
+.index_my_business_container .li_list_item_div .project_name_div{position:relative;flex:1;height: 4rem;}
+.index_my_business_container .li_list_item_div .project_name_default_div{width: 100%;color:#98A5B6;}
+.index_my_business_container .li_list_item_div .item_bus_btn{
+    display: flex;
+}
+.li_list_item_div .project_name_div .left_span{
+    position: absolute;
+    left: 3.5rem;
+    overflow:hidden;
+    top:50%;
+    -webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);
+    font-size: 0.8rem;
+}
+.index_my_business_container .li_list_item_div .edit_btn{    
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    background:  url('../images/index/list_edit_01.png') no-repeat center;
+    background-size: 50%;
+}
+.index_my_business_container .li_list_item_div .delete_btn{    
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    background: #E14470 url('../images/index/list_delete.png') no-repeat center;
+    background-size: 50%;
+}
+
+.index_my_business_container .li_list_item_div .item_bus_btn{
+    display: flex;
+    right: 0rem;
+}
+.my_business_container .list_item::-webkit-scrollbar,.index_my_business_container .list_item::-webkit-scrollbar {
+    display: none;
+}
+.project_top_btn{
+    position: relative;
+    width:100%;
+    height:14vh;
+}
+.project_top_btn span{
+    position: absolute;
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 7vw;
+    width:7vw;
+    text-align: center;
+    background: url('../images/index/list_icon_shouqi.png') no-repeat center;
+    background-size: 100%;
+}
+.project_bottom_btn{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:12vh;
+    background: #287df1;
+}
+.project_bottom_btn span{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    line-height: 3rem;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);
+    background: url('../images/index/list_icon_add.png') no-repeat center;
+    background-size: 50%; 
+}
+.project_name_div .project_icon{
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 4rem;
+    left:-1.1rem;
+    top:50%;
+    -webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);
+    background: url('../images/index/list_icon_program.png') no-repeat center;
+    background-size: 50%; 
+}
+.project_name_div .project_default_icon::after{
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 4rem;
+    left:-1.1rem;
+    top:50%;
+    -webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);
+    background: url('../images/index/list_icon_program.png') no-repeat center;
+    background-size: 50%; 
+}
+
+.project_name_div .project_default_icon::before{
+    position: absolute;
+    content: "";
+    left:-1rem;
+    width: 6px;
+    height: 6px;
+    background:#DB9413;
+    border-radius: 10px;
+    opacity: 0.6;
+    top:50%;
+    -webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);
+}
+.project_name_div .project_default_font{
+    width: 80%;
+    /* background:yellow; */
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.project_name_div .project_edit_font{
+    /* background:blue; */
+    width:13vw;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+/* 项目列表  end */

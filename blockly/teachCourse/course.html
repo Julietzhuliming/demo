@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>JIMU Course</title>
+    <link rel="stylesheet" type="text/css" href="./bundle.css">
+    <!-- 由block目录下的core生成 -->
+    <script src="../resource/lib/blockly/blockly_compressed.js"></script>
+    <!-- <script src="../../blockly/blockly_uncompressed.js"></script> -->
+</head>
+
+<body >
+    <!-- 工作空间 -->
+    <div id="content_blocks" class="workspace"></div>
+
+    <!-- 运行按钮 -->
+    <div id="blockly_run_btn" class="course_run"></div>
+    <!-- 重新开始按钮 -->
+    <div id="task_restart"></div>
+    <!-- 蓝牙连接标识 -->
+    <div id="bluetooth_btn" class="course_blue_container"></div>
+
+    <!-- 课程菜单锁 -->
+    <div id="menulock_box"></div>
+    <!-- 课程标题 -->
+    <div id="course_title" class="penetrate"></div>
+    <!-- 课程指引 -->
+    <div id="hand_guide"></div>
+    <!-- 课程通关界面 -->
+    <div id="result_container"></div>
+
+    <!-- 系统信息提示 -->
+    <div id="system_prompt"></div>
+    <!-- 传感器信息显示的框-->
+    <div id="infoShower"></div>
+    <!-- 显示红外信息内容-->
+    <div id="popupWindow"></div>
+    <!-- 信息弹框提示 -->
+    <div id="message_tips"></div>
+
+    <!-- 业务内容弹出框 -->
+    <div id="business_container"></div>
+    
+    <div id="course_runner" style="opacity:0"></div>
+
+    <script src="./bundle.js"></script>
+</body>
+</html>

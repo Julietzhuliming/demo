@@ -1,0 +1,111 @@
+.step_slider_bar {
+    position: relative;
+    margin: auto;
+    top: 25%;
+    width: 30rem;
+    height: 2.2rem;
+    background: #EDEDED;
+    border-radius: 2rem;
+    padding: 0 1.8rem 0 1.3rem;
+    box-sizing: border-box;
+}
+.step_slider_bar .slider-bar-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.step_slider_bar .progressing {
+    position: absolute;
+    top: 50%;
+    margin-top:-0.36rem;
+    height:0.72rem;
+    background:#354C6E;
+    border-top-left-radius: 1.4rem;
+    border-bottom-left-radius: 1.4rem;
+}
+.step_slider_bar .focus-bar {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.step_slider_bar .slider_ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    margin-top:-0.36rem;
+}
+.step_slider_bar .slider_li {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #354C6E;
+}
+
+.step_slider_bar .slider_li .img_span {
+    position: absolute;
+    left: 50%;
+    top: 3rem;
+    width: 3.2rem !important;
+    height: 3.2rem !important;
+    transform: translateX(-50%);
+}
+
+.step_slider_bar .slider_li .text_span {
+    position: absolute;
+    left: 50%;
+    top: 6rem;
+    width: 8rem;
+    height: 1rem;
+    color: #435267 !important;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.popup_tune .step_slider_bar {
+    top: 30%;
+}
+.popup_tune .step_slider_bar .focus-bar {
+    background:url("../images/popup/acousto/beat_defaulf.png") no-repeat center/cover;
+}
+.popup_tune .step_slider_bar .slider_li .text_span {
+    top: 3rem;
+}
+
+.popup_speed .step_slider_bar .progressing {
+    background: none;
+}
+.popup_speed .step_slider_bar .focus-bar {
+    background: url(../images/popup/motion/pointer.png) no-repeat center/cover;
+}
+
+.popup_speed {
+    width: 38.4rem;
+    height: 20.4rem;
+}
+
+.popup_speed .img_span.img_slower {
+    background:url('../images/popup/motion/veryslow@3x.png') no-repeat center/cover;
+}
+
+.popup_speed .img_span.img_slow {
+    background:url('../images/popup/motion/slow@3x.png') no-repeat center/cover;
+}
+
+.popup_speed .img_span.img_normal {
+    background:url('../images/popup/motion/normal@3x.png') no-repeat center/cover;
+}
+
+.popup_speed .img_span.img_fast {
+    background:url('../images/popup/motion/fast@3x.png') no-repeat center/cover;
+}
+
+.popup_speed .img_span.img_faster {
+    background:url('../images/popup/motion/veryfast@3x.png') no-repeat center/cover;
+}

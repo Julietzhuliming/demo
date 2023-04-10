@@ -1,0 +1,99 @@
+.success_page > div.popup {
+    background:url('../images/successbg.png') no-repeat center;
+    background-size:cover;
+}
+.restart_button {
+    position: absolute;
+    bottom: 25vh;
+    right: 2%;
+    background:url('../images/rstart.png') no-repeat center;
+    background-size: cover;
+    height: 4.8rem;
+    width: 4.8rem;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+}
+.button_item {
+    position:absolute;
+    color:#39c6ea;
+    font-size:2.6em;
+    width:33.33%;
+    bottom:5vh;
+    height:10vh;
+}
+.button_item > img {
+    width:18vh;
+}
+ul.stars {
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:45%;
+    height:13%;
+    font-size:2.8em;
+    color:#cccc6f;
+    position:absolute;
+    top:46.23%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+ul.stars li {
+    /*transform-origin: 50% 50%;*/
+    height:100%;
+    width:100%;
+    position:relative;
+    -webkit-transform-origin: 50% 50%;-moz-transform-origin: 50% 50%;-ms-transform-origin: 50% 50%;-o-transform-origin: 50% 50%;transform-origin: 50% 50%;
+    -webkit-animation: scaledemo 1.5s infinite ease-in-out;
+    animation: scaledemo 1.5s infinite ease-in-out;
+}
+ul.stars li:nth-child(2) {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+ul.stars li:nth-child(3) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}  
+@keyframes scaledemo{
+    0%{-webkit-transform: scale(1);}
+    15%{-webkit-transform: scale(1.4);}
+    33.33%{-webkit-transform: scale(1);}
+}
+ul.stars li > img {
+    height:120%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);
+}
+.success_op {
+    position:absolute;
+    bottom:0vh;
+    width:80%;
+    left:10%;
+}
+.button_ulist {
+    left:0;
+}
+.button_restart {
+    left:33.33%;
+}
+.button_next {
+    left:66.66%;
+}
+.course_info{
+    color: #fff;
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 66.5%;
+    -webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%);
+    text-align: center;
+}
+.warn_img{
+    z-index: 1;
+}
+/* 课程成功页面样式 end */

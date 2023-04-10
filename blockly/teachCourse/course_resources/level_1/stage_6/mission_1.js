@@ -1,0 +1,39 @@
+var courseData = {
+    level: 1,
+    stage: 6,
+    knowledgePoint: 1,
+    mission: 1,
+    taskTitle: MSG['l1_s6_m1_' + window.moveType + '_title'] || MSG['l1_s6_m1_commonType_title'],
+    toolConfig: {
+        'motion': ['motion_speed_continued_second', 'motion_speed_distance', 'motion_action_stop'],
+        'acousto_optic': ['acoustooptic_paly_tone', 'acoustooptic_lights_on'],
+        'control': ['custom_control_wait_seconds'],
+    },
+    program: {
+        'commonType': {// 普通类别
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="45" y="141"><field name="PROGRAM_BRANCH">1</field></block><block type="motion_speed_continued_second" id="f+JGSK;){A|_aU`Bl,Bi" x="102" y="208"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="%)`k]bI_HmB$xHDF?#s`"><field name="TIME">1</field></shadow></value></block><block type="custom_control_wait_seconds" id="$5GyWPHLA2%0=URV@z!a" x="169" y="283"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="lhx|R16[{i_c:$i3z9*2"><field name="NUM">3</field></shadow></value></block><block type="motion_speed_continued_second" id="d[*1%gQ9rT8E?#{hVe_L" x="173" y="357"><field name="directionType">TurnLeft</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="au;q9mV/P?lslGU?EJgX"><field name="TIME">1</field></shadow></value></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="50" y="105"><field name="PROGRAM_BRANCH">1</field><next><block type="motion_speed_continued_second" id="f+JGSK;){A|_aU`Bl,Bi"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="%)`k]bI_HmB$xHDF?#s`"><field name="TIME">1</field></shadow></value><next><block type="custom_control_wait_seconds" id="$5GyWPHLA2%0=URV@z!a"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="lhx|R16[{i_c:$i3z9*2"><field name="NUM">2</field></shadow></value><next><block type="motion_speed_continued_second" id="d[*1%gQ9rT8E?#{hVe_L"><field name="directionType">TurnLeft</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="au;q9mV/P?lslGU?EJgX"><field name="TIME">1</field></shadow></value></block></next></block></next></block></next></block></xml>',
+            ignore: [
+                {type: 'motion_speed_continued_second', name: ['speedType'], index: 0},
+                {type: 'motion_speed_continued_second', name: ['speedType', 'MOTION_SPEED_CONTINUED_SECOND'], index: 1},
+            ]
+        },
+        'doubleFeet': {// 双足
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="33" y="130"><field name="PROGRAM_BRANCH">1</field></block><block type="motion_speed_distance" id="tmSN=w;RYiSg:~7B/p=S" x="101" y="207"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="X;E696BX|~vDdiX~}-5K"><field name="NUM">1</field></shadow></value></block><block type="custom_control_wait_seconds" id="$5GyWPHLA2%0=URV@z!a" x="171" y="280"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="lhx|R16[{i_c:$i3z9*2"><field name="NUM">3</field></shadow></value></block><block type="motion_speed_distance" id="[ef5a]f-AKgB{7k?,M5=" x="171" y="359"><field name="directionType">MoveLeft</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="3l6;!v,KXZRm|H[VOSkM"><field name="NUM">1</field></shadow></value></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="50" y="105"><field name="PROGRAM_BRANCH">1</field><next><block type="motion_speed_distance" id="tmSN=w;RYiSg:~7B/p=S"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="X;E696BX|~vDdiX~}-5K"><field name="NUM">1</field></shadow></value><next><block type="custom_control_wait_seconds" id="$5GyWPHLA2%0=URV@z!a"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="lhx|R16[{i_c:$i3z9*2"><field name="NUM">2</field></shadow></value><next><block type="motion_speed_distance" id="[ef5a]f-AKgB{7k?,M5="><field name="directionType">MoveLeft</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="3l6;!v,KXZRm|H[VOSkM"><field name="NUM">1</field></shadow></value></block></next></block></next></block></next></block></xml>',
+            ignore: [
+                {type: 'motion_speed_distance', name: ['speedType'], index: 0},
+                {type: 'motion_speed_distance', name: ['speedType', 'CUSTOM_MATH_NUM'], index: 1},
+            ]
+        },
+        'fourFeet': {// 四足
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="38" y="138"><field name="PROGRAM_BRANCH">1</field></block><block type="motion_speed_distance" id="tmSN=w;RYiSg:~7B/p=S" x="96" y="214"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="X;E696BX|~vDdiX~}-5K"><field name="NUM">1</field></shadow></value></block><block type="custom_control_wait_seconds" id="$5GyWPHLA2%0=URV@z!a" x="168" y="272"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="lhx|R16[{i_c:$i3z9*2"><field name="NUM">3</field></shadow></value></block><block type="motion_speed_distance" id="[ef5a]f-AKgB{7k?,M5=" x="170" y="348"><field name="directionType">MoveBackward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="3l6;!v,KXZRm|H[VOSkM"><field name="NUM">1</field></shadow></value></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="50" y="105"><field name="PROGRAM_BRANCH">1</field><next><block type="motion_speed_distance" id="tmSN=w;RYiSg:~7B/p=S"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="X;E696BX|~vDdiX~}-5K"><field name="NUM">1</field></shadow></value><next><block type="custom_control_wait_seconds" id="$5GyWPHLA2%0=URV@z!a"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="lhx|R16[{i_c:$i3z9*2"><field name="NUM">2</field></shadow></value><next><block type="motion_speed_distance" id="[ef5a]f-AKgB{7k?,M5="><field name="directionType">MoveBackward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="3l6;!v,KXZRm|H[VOSkM"><field name="NUM">1</field></shadow></value></block></next></block></next></block></next></block></xml>',
+            ignore:[
+                {type: 'motion_speed_distance', name: ['speedType'], index: 0},
+                {type: 'motion_speed_distance', name: ['speedType', 'CUSTOM_MATH_NUM'], index: 1},
+            ]
+        },
+    },
+    missionStandardTime:25*1000,//通过任务的标准时间,单位毫秒
+};

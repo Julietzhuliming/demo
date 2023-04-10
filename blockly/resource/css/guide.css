@@ -1,0 +1,116 @@
+.popup_guide {
+    width: 32rem;
+    height: 22.4rem;
+}
+.guide_content{
+    color: #435267;
+    font-size: 1rem;
+    overflow: auto;
+    position: absolute;
+    left: 2.2rem;
+    right: 2.2rem;
+    bottom: 5rem;
+    top: 4.4rem;
+}
+.guide_content ol{
+    margin:0;
+    padding:0;
+    counter-reset:guide;
+}
+.guide_content ol li{
+    list-style:none;
+    counter-increment:guide;
+    line-height: 2rem;
+}
+.guide_content ol li::before{
+    content:counter(guide) '. ';
+}
+.guide_content p {
+    line-height: 2rem;
+}
+.popup_title {
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 4.4rem;
+    line-height: 4.4rem;
+}
+.title_1{
+    color: #000000;
+}
+
+/* 引导页样式 --begin */
+.blockly_guide_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.blockly_guide_container .guide_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45,54,74,0.6);
+}
+
+.blockly_guide_container .guide_close {
+    left: .9rem;
+}
+
+.blockly_guide_container .professor_container {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 14rem;
+    height: 11rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.blockly_guide_container .professor {
+    display: block;
+    position: relative;
+    background:  url('../images/index/link_professor_left.png') no-repeat center/contain;
+    width: 100%;
+    height: 100%;
+}
+
+.blockly_guide_container .professor .introduce {
+    position: absolute;
+    left: 68%;
+    top: 0;
+    background:  url('../images/index/link_introduce_bg_white.png') no-repeat center/100% 100%;
+    padding: 1rem 2rem 2.44rem;
+    box-sizing: border-box;
+    width: 18.5rem;
+    min-height: 6.44rem;
+    line-height: 1.5rem;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+}
+
+.blockly_guide_container.step1 .professor_container {
+    top: initial;
+    bottom: -1rem;
+    transform: initial;
+    -webkit-transform: initial;
+}
+
+.blockly_guide_container.step1 .professor {
+    background:  url('../images/index/link_professor_right.png') no-repeat center/100% 100%;
+}
+.blockly_guide_container.step1 .professor .introduce {
+    left: 32%;
+    transform: translate(0, -150%);
+    -webkit-transform: translate(0, -150%);
+}
+/* 引导页样式 --end */

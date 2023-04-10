@@ -1,0 +1,91 @@
+.popup_direction {
+    width: 28.2rem;
+    height: 22.2rem;
+    padding: 3.2rem 6.2rem;
+    box-sizing: border-box;
+}
+.compass {
+    position:relative;
+    width:100%;
+    height:100%;
+    display:inline-block;
+}
+.compass .circle {
+    box-shadow: 0 .6rem 0 0 rgba(0,0,0,0.20);
+    border-radius: 50%;
+}
+.compass .sector {
+    position:absolute;
+    width: 4rem;
+    height: 4rem;
+}
+.compass .sector p {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.compass .icon_top {
+    top:20%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+}
+.compass .icon_top p {
+    background:url('../images/popup/motion/direction_forward_empty@2x.png') no-repeat center / 100% 100%;
+}
+.compass .icon_below {
+    top:80%;
+    left:50%;
+    transform:translate(-50%, -50%) rotateX(180deg);
+    -webkit-transform:translate(-50%, -50%) rotateX(180deg);
+}
+.compass .icon_below p {
+    background:url('../images/popup/motion/direction_forward_empty@2x.png') no-repeat center / 100% 100%;
+}
+.compass .icon_left {
+    top:50%;
+    left:20%;
+    transform:translate(-50%, -50%) rotate(-90deg);
+    -webkit-transform:translate(-50%, -50%) rotate(-90deg);
+}
+.compass .icon_left p {
+    background:url('../images/popup/motion/direction_left_empty@2x.png') no-repeat center / 100% 100%;
+    transform:translate(-50%, -50%) rotate(90deg);
+    -webkit-transform:translate(-50%, -50%) rotate(90deg);
+}
+.compass.notwheel .icon_left p{
+    background:url('../images/popup/motion/direction_forward_empty@2x.png') no-repeat center / 100% 100%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+.compass .icon_right {
+    top:50%;
+    left:80%;
+    transform:translate(-50%, -50%) rotate(90deg);
+    -webkit-transform:translate(-50%, -50%) rotate(90deg);
+}
+.compass .icon_right p {
+    background:url('../images/popup/motion/direction_left_empty@2x.png') no-repeat center / 100% 100%;
+    transform:translate(-50%, -50%) rotate(90deg) rotateX(180deg);
+    -webkit-transform:translate(-50%, -50%) rotate(90deg) rotateX(180deg);
+}
+.compass.notwheel .icon_right p{
+    background:url('../images/popup/motion/direction_forward_empty@2x.png') no-repeat center / 100% 100%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+.compass .small_round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #621788;
+    transform:translate(50%, 50%);
+    -webkit-transform:translate(-50%, -50%);
+}

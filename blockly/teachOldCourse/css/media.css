@@ -1,0 +1,12 @@
+@media (min-width:1024px ) {
+    .course_7:after {
+        height: 13vw;
+        width: 14vw;
+    }
+}
+@media (max-width:568px ) {
+    .course_7:after {
+        height: 12vw;
+        width: 20vw;
+    }
+}

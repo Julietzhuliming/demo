@@ -1,0 +1,38 @@
+var courseData = {
+    level: 1,
+    stage: 7,
+    knowledgePoint: 1,
+    mission: 9,
+    taskTitle: MSG['l1_s7_m9_' + window.moveType + '_title'] || MSG['l1_s7_m9_commonType_title'],
+    helpList: {
+        'commonType': [
+            {
+                'text': 'l1_help_032',
+            }
+        ],
+    },
+    toolConfig: {
+        'motion': ['motion_speed_continued_second', 'motion_speed_distance'],
+        'control': ['custom_control_wait_seconds', 'custom_control_repeat_times', 'custom_control_do_while', 'custom_control_if_else'],
+        'acousto_optic': ['acoustooptic_paly_tone', 'acoustooptic_lights_on'],
+        'sensors': ['sensor_phone_pad_tilt'],
+    },
+    guideClick: ['#\\:3'],
+    program: {
+        'commonType': {// 普通类别
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="22" y="151"><field name="PROGRAM_BRANCH">1</field></block><block type="sensor_phone_pad_tilt" id="ne[x|!O;]$:tCfrDLj0x" x="288" y="186"><field name="TILT_TYPE">tilt_left</field></block><block type="acoustooptic_paly_tone" id="0g;}s)s;xcc`c=V1FEq0" x="25" y="265"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="b!.)PONn;PgzM/^CMzw_"><field name="toneName">D5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="+LqN`FEOb|]7yST82S.H"><field name="toneName">E5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="w)Q7g(ck$VtjyFSO]cD)"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="custom_control_wait_seconds" id="rBFkyYn-68d!6?|[RH=5"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="[K[.14;4Oxje0}@j$R,I"><field name="NUM">0.5</field></shadow></value></block></next></block></next></block></next></block></next></block><block type="motion_speed_continued_second" id="rfc=kUV=M5fV*@6/linD" x="225" y="479"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="G7YFuE;)ig/:d%o]h`|W"><field name="TIME">1</field></shadow></value></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="25" y="75"><field name="PROGRAM_BRANCH">1</field><next><block type="custom_control_do_while" id="J`8*)5,40RyU7WFJ;!br"><statement name="DO"><block type="acoustooptic_paly_tone" id="0g;}s)s;xcc`c=V1FEq0"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="b!.)PONn;PgzM/^CMzw_"><field name="toneName">D5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="+LqN`FEOb|]7yST82S.H"><field name="toneName">E5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="w)Q7g(ck$VtjyFSO]cD)"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="custom_control_wait_seconds" id="rBFkyYn-68d!6?|[RH=5"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="[K[.14;4Oxje0}@j$R,I"><field name="NUM">0.5</field></shadow></value></block></next></block></next></block></next></block></next></block></statement><value name="BOOL"><block type="sensor_phone_pad_tilt" id="ne[x|!O;]$:tCfrDLj0x"><field name="TILT_TYPE">tilt_left</field></block></value><next><block type="motion_speed_continued_second" id="rfc=kUV=M5fV*@6/linD"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="G7YFuE;)ig/:d%o]h`|W"><field name="TIME">1</field></shadow></value></block></next></block></next></block></xml>',
+            ignore: [
+                {type: 'motion_speed_continued_second', name: ['speedType', 'MOTION_SPEED_CONTINUED_SECOND']}
+            ]
+        },
+        'doubleFeet': {// 双足
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="98" y="114"><field name="PROGRAM_BRANCH">1</field></block><block type="sensor_phone_pad_tilt" id="ne[x|!O;]$:tCfrDLj0x" x="285" y="145"><field name="TILT_TYPE">tilt_left</field></block><block type="acoustooptic_paly_tone" id="0g;}s)s;xcc`c=V1FEq0" x="31" y="207"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="b!.)PONn;PgzM/^CMzw_"><field name="toneName">D5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="+LqN`FEOb|]7yST82S.H"><field name="toneName">E5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="w)Q7g(ck$VtjyFSO]cD)"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="custom_control_wait_seconds" id="rBFkyYn-68d!6?|[RH=5"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="[K[.14;4Oxje0}@j$R,I"><field name="NUM">0.5</field></shadow></value></block></next></block></next></block></next></block></next></block><block type="motion_speed_distance" id="_c5%zq$):Ig~h6h]*/D5" x="93" y="457"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="1~s|N:LcJ0dE|Q!o?gRw"><field name="NUM">1</field></shadow></value></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="10" y="30"><field name="PROGRAM_BRANCH">1</field><next><block type="custom_control_do_while" id="r7qZ%|K)3@mB*F6(S61K"><statement name="DO"><block type="acoustooptic_paly_tone" id="0g;}s)s;xcc`c=V1FEq0"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="b!.)PONn;PgzM/^CMzw_"><field name="toneName">D5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="+LqN`FEOb|]7yST82S.H"><field name="toneName">E5</field><field name="beatType">beat_4_1</field><next><block type="acoustooptic_paly_tone" id="w)Q7g(ck$VtjyFSO]cD)"><field name="toneName">C5</field><field name="beatType">beat_4_1</field><next><block type="custom_control_wait_seconds" id="rBFkyYn-68d!6?|[RH=5"><value name="CUSTOM_CONTROL_WAIT_SECONDS"><shadow type="custom_math_num" id="[K[.14;4Oxje0}@j$R,I"><field name="NUM">0.5</field></shadow></value></block></next></block></next></block></next></block></next></block></statement><value name="BOOL"><block type="sensor_phone_pad_tilt" id="ne[x|!O;]$:tCfrDLj0x"><field name="TILT_TYPE">tilt_left</field></block></value><next><block type="motion_speed_distance" id="_c5%zq$):Ig~h6h]*/D5"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="1~s|N:LcJ0dE|Q!o?gRw"><field name="NUM">1</field></shadow></value></block></next></block></next></block></xml>',
+            ignore: [
+                {type: 'motion_speed_distance', name: ['speedType', 'CUSTOM_MATH_NUM']}
+            ]
+        },
+    },
+    missionStandardTime: 30 * 1000//通过任务的标准时间,单位毫秒
+};

@@ -1,0 +1,288 @@
+
+@media (max-width:1024px ) {
+    /* 兼容ipad */
+    .item_list li img {
+        width:7vh;
+    }
+}
+/* 兼容iphone6 */
+@media (max-width:768px ) {
+    pre.prettyprint{
+        font-size:1em!important;
+    }
+    .popup_small_switch{
+        width: 40%;
+        left: 30%;
+    }
+}
+@media (max-width:568px) {
+    .serverAngle_bg {
+        background-size: 100%;
+    }
+    .title_1{
+        margin: 2px 0;
+    }
+    .popup_small_switch{
+        width: 50%;
+        height: 50%;
+        left: 25%;
+        top: 25%;
+        font-size: 14px;
+    }
+    .inputBox{
+        font-size:16px;
+    }
+}
+
+@media (min-height:600px){/* 平板 */
+    .executebtn_box{
+        width:5.5rem;
+        height:5.5rem;
+    }
+    .blocklyTreeIcon {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .popup_incline {
+        width: 36.4rem;
+        height: 24.4rem;
+    }
+
+    .popup_tune {
+        width: 44.4rem;
+        height: 20.4rem;
+    }
+
+    .popup_time {
+        width: 42.2rem;
+        height: 26.2rem;
+    }
+    
+    .progressbar {
+        width: 36rem;
+    }
+
+    .popup_tune .list_ul .beat_li{
+      width:9rem;
+    }
+    .popup_tune .list_ul .tone_li{
+      width:4.6rem;
+      height:10rem;
+    }
+    .popup_tune .list_ul .common_li{
+      width: 4rem;
+      height: 4rem !important;
+    }
+    .list_ul{
+      height: 9rem;
+      margin-top: -2.8rem;
+    }
+    .playTune .list_ul {
+      margin-top: -3rem;
+    }
+    .play_beat .list_ul {
+      margin-left: -0.5rem;
+    }
+    .popup_sound {
+        height: 27rem;
+        background-color:#EBEBEB;
+    }
+    .popup_sound .ItemSelect_container .item_list li .sound_name_rect {
+        height: 7.2rem;
+    }
+    .popup_sound .ItemSelect_container .item_list li img {
+        width: 5rem !important;
+    }
+    .popup_sound .sound_type .item_list li img {
+        width: 3rem !important;
+    }
+
+    .popup_custom_lights {
+        width: 44.4rem;
+        height: 32.4rem;
+        padding: 2.2rem 0;
+    }
+    .popup_custom_lights .list_ul {
+        height: 8rem;
+        margin-top: 3rem !important;
+    }
+    .colordisk_box {
+        width:12rem;
+        height:12rem;
+    }
+
+    .popup_angle {
+        width: 39.4rem;
+        height: 32.4rem;
+    }
+    .angle_0 {
+        top: 0;
+    }
+
+    .popup_direction {
+        width: 36.2rem;
+        height: 30.2rem;
+    }
+
+    .popup_direction .compass .small_round {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .sound_record_contain .progressbar .progressing{
+        margin-left: -2.9%;
+    }
+    .sound_record_contain .currentValue{
+        /* right: -34rem; */
+        font-size: 0.8rem;
+    }
+    
+    .popup_middle_list_items{
+      height: 30rem;
+      width: 40rem;
+    }
+
+    .popup_middle_list_items .item_list li{
+      width: 8rem;
+      height: 5.5rem;
+      margin-left: 0.5rem;
+    }
+
+    .popup_middle_list_items .item_list li img{
+      width: 5.3rem !important;
+    }
+
+    .popup_middle_list_items .setEmotionColor, .popup_middle_list_items .motionName{
+      height: 72%!important;
+      top: 46%;
+      margin-left: 0.5rem;
+    }
+    .popup_sound{
+      height: 30rem;
+      width: 40rem;
+    }
+    
+    .popup_sound .ItemSelect_container{
+      height: 69% !important;
+      top: 51%;
+    }
+
+    .popup_middle_list_items .background_sound_btn {
+      top: 2rem;
+    }
+
+    .LIST_SERVOS .item_list{
+      margin-top: -1rem;
+    }
+
+    .popup_middle_two_items .item_list li img,
+    .popup_middle_one_item .item_list li img {
+        width: 7.2rem !important;
+    }
+
+    .popup_middle_three_items .item_list li img {
+        width: 6.3rem !important;
+    }
+
+    .popup_keypad {
+        width: 24.2rem;
+        height: 26.6rem;
+    }
+    .popup_keypad .num_keypad_value{
+        height: 3rem;
+        line-height: 3rem;
+    }
+    .popup_keypad .num_keypad_value span{
+        top: .75rem;
+    }
+    .popup_keypad .num_keypad_list li {
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .popup_create_action {
+        padding: 2rem;
+        width: 34rem;
+        height: 22rem;
+    }
+
+    .popup_large_grey {
+        width: 46rem;
+    }
+
+    .business_btns {
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .business_btns .add_btn_class span {
+        height: 4rem;
+    }
+    .my_business_container {
+        height: 72%;
+    }
+    .my_business_container .item_out_div_class {
+        width: 40rem;
+    }
+    .my_business_container .list_item {
+        height: 4rem;
+    }
+    .my_business_container .list_item_div.flex {
+        width: 40rem;
+    }
+
+    .blockly_guide_container .professor_container {
+        width: 20.94rem;
+        height: 13.97rem;
+    }
+    .blockly_guide_container .introduce {
+        width: 25.78rem;
+    }
+}
+
+@media (max-height:320px){
+    html {
+        font-size:12px;
+    }
+}
+@media (min-height:321px) and (max-height:431px){
+    html {
+        font-size:14px;
+    }
+}
+@media (min-height:432px) and (max-height:687px){
+    html {
+        font-size:16px;
+    }
+}
+@media (min-height:688px) and (max-height:815px){
+    html {
+        font-size:18px;
+    }
+}
+@media (min-height:816px) and (max-height:943px){
+    html {
+        font-size:22px;
+    }
+}
+@media (min-height:944px) and (max-height:1071px){
+    html {
+        font-size:26px;
+    }
+}
+@media (min-height:1072px) and (max-height:1199px){
+    html {
+        font-size:30px;
+    }
+}
+@media (min-height:1200px){
+    html {
+        font-size:32px;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .blocklyPath {
+        stroke-width: .5px;
+    }
+}

@@ -1,0 +1,30 @@
+var courseData = {
+    level: 1,
+    stage: 4,
+    knowledgePoint: 1,
+    mission: 8,
+    taskTitle: MSG['l1_s4_m8_' + window.moveType + '_title'] || MSG['l1_s4_m8_commonType_title'],
+    helpList: {
+        'commonType': [
+            {
+                'text': 'l1_help_020',
+            }
+        ],
+    },
+    toolConfig: {
+        'motion': ['motion_speed_continued_second', 'motion_speed_distance'],
+        'control': ['custom_control_repeat_times', 'custom_control_wait_seconds'],
+        'acousto_optic': ['acoustooptic_paly_tone', 'acoustooptic_lights_on'],
+    },
+    program: {
+        'commonType': {// 普通类别
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="53" y="156"><field name="PROGRAM_BRANCH">1</field><next><block type="acoustooptic_paly_sound" id="l{8itN:cr|~jZWS{$C`]"><field name="isDelay">true</field><field name="chooseSound">machine:engine</field><next><block type="motion_speed_continued_second" id="hiz5cO_!A};;V3F`co8r"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="|jH}}x;CJ)rdZGZ3hD#L"><field name="TIME">1</field></shadow></value><next><block type="acoustooptic_paly_sound" id="uVit/ox6$n%O6QRQ##4B"><field name="isDelay">true</field><field name="chooseSound">machine:busy_tone</field><next><block type="motion_speed_continued_second" id="D1q.hKbz8c%KW?tadZ!Y"><field name="directionType">MoveBackward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="TxN-Y*+b@V)ob(H(MgR?"><field name="TIME">1</field></shadow></value></block></next></block></next></block></next></block></next></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="50" y="105"><field name="PROGRAM_BRANCH">1</field><next><block type="custom_control_repeat_times" id="iLMFGMz0wMXG4:8T4=i)"><value name="CUSTOM_CONTROL_REPEAT_TIMES"><shadow type="custom_math_num" id="HmdtXGO(wvp]`;NGzvGW"><field name="NUM">3</field></shadow></value><statement name="CUSTOM_CONTROL_DO0"><block type="acoustooptic_paly_sound" id="l{8itN:cr|~jZWS{$C`]"><field name="isDelay">true</field><field name="chooseSound">machine:engine</field><next><block type="motion_speed_continued_second" id="hiz5cO_!A};;V3F`co8r"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="|jH}}x;CJ)rdZGZ3hD#L"><field name="TIME">1</field></shadow></value><next><block type="acoustooptic_paly_sound" id="uVit/ox6$n%O6QRQ##4B"><field name="isDelay">true</field><field name="chooseSound">machine:busy_tone</field><next><block type="motion_speed_continued_second" id="D1q.hKbz8c%KW?tadZ!Y"><field name="directionType">MoveBackward</field><field name="speedType">id_motion_speed_normal</field><value name="MOTION_SPEED_CONTINUED_SECOND"><shadow type="motion_custom_math_num" id="TxN-Y*+b@V)ob(H(MgR?"><field name="TIME">1</field></shadow></value></block></next></block></next></block></next></block></statement></block></next></block></xml>',
+        },
+        'doubleFeet': {// 双足
+            init: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="51" y="156"><field name="PROGRAM_BRANCH">1</field><next><block type="acoustooptic_paly_sound" id="l{8itN:cr|~jZWS{$C`]"><field name="isDelay">true</field><field name="chooseSound">machine:engine</field><next><block type="motion_speed_distance" id="/}xLW9nqdv^c5tHje_TJ"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="!=9ancVI,kihBSv*wu)W"><field name="NUM">1</field></shadow></value><next><block type="acoustooptic_paly_sound" id="uVit/ox6$n%O6QRQ##4B"><field name="isDelay">true</field><field name="chooseSound">machine:busy_tone</field><next><block type="motion_speed_distance" id="1diMsxkf#P0:QaR`7:)X"><field name="directionType">MoveBackward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="V;j=a8gDMv^/l:6?x@w]"><field name="NUM">1</field></shadow></value></block></next></block></next></block></next></block></next></block></xml>',
+            standard: '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="program_start" id="RBpqO=zS:Min@~s1YZVV" deletable="false" x="50" y="105"><field name="PROGRAM_BRANCH">1</field><next><block type="custom_control_repeat_times" id="d5`vP]fm0l`QDlfk^q8S"><value name="CUSTOM_CONTROL_REPEAT_TIMES"><shadow type="custom_math_num" id="xmc/_S+A6i1Cm1%XnB0`"><field name="NUM">3</field></shadow></value><statement name="CUSTOM_CONTROL_DO0"><block type="acoustooptic_paly_sound" id="l{8itN:cr|~jZWS{$C`]"><field name="isDelay">true</field><field name="chooseSound">machine:engine</field><next><block type="motion_speed_distance" id="/}xLW9nqdv^c5tHje_TJ"><field name="directionType">MoveForward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="!=9ancVI,kihBSv*wu)W"><field name="NUM">1</field></shadow></value><next><block type="acoustooptic_paly_sound" id="uVit/ox6$n%O6QRQ##4B"><field name="isDelay">true</field><field name="chooseSound">machine:busy_tone</field><next><block type="motion_speed_distance" id="1diMsxkf#P0:QaR`7:)X"><field name="directionType">MoveBackward</field><field name="speedType">id_motion_speed_normal</field><value name="CUSTOM_MATH_NUM"><shadow type="sys_custom_math_num" id="V;j=a8gDMv^/l:6?x@w]"><field name="NUM">1</field></shadow></value></block></next></block></next></block></next></block></statement></block></next></block></xml>',
+        },
+    },
+    missionStandardTime:20*1000//通过任务的标准时间,单位毫秒
+};
